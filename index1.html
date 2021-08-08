@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="https://unpkg.com/vue/dist/vue.js"></script>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+			<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+			<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<style type="text/css">
+			.head{
+				height: 100vh;
+				width: 100vw;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app">
+			<div class="head">
+			<h2 style="padding-bottom: 100px;">点击下方领取按钮即可领取一杯奶茶</h2>
+			<button type="button" @click="Receive" class="btn btn-primary" >领取</button>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var vm = new Vue({
+			el: "#app",
+			methods: {
+				Receive(){
+					self.location='index2.html'
+				}
+				}
+			
+		})
+	</script>
+</html>
